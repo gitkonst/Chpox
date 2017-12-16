@@ -1,0 +1,12 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <circle id="svg_1" r="187.62729" cy="200" cx="200" stroke-width="20" stroke="#b2b2b2" fill="#ffffff"/>
+  <polygon stroke="#000000" stroke-width="5" points="280.6137390136719,200.7705078125 152.193115234375,274.9141845703125 152.193115234375,126.6268310546875 280.6137390136719,200.7705078125 " strokeWidth="5" strokecolor="#b2b2b2" fill="#000000" edge="193.32069" orient="x" sides="3" shape="regularPoly" id="svg_4" cy="150" cx="228"/>
+  <polygon strokeWidth="5" strokecolor="#b2b2b2" fill="#ffffff" edge="0" orient="x" sides="3" shape="regularPoly" id="svg_5" cy="335" cx="262"/>
+  <polygon stroke-width="5" points="252,202 252,202 252,202 252,202 " strokeWidth="5" strokecolor="none" fill="#ffffff" edge="0" orient="x" sides="3" shape="regularPoly" id="svg_6" cy="202" cx="252"/>
+  <polygon stroke-width="5" points="264,179 264,179 264,179 264,179 " strokeWidth="5" strokecolor="none" fill="#ffffff" edge="0" orient="x" sides="3" shape="regularPoly" id="svg_7" cy="179" cx="264"/>
+  <polygon strokeWidth="5" strokecolor="none" fill="#ffffff" edge="0" orient="x" sides="5" shape="regularPoly" id="svg_8" cy="-49" cx="-219"/>
+ </g>
+</svg>

@@ -1,0 +1,140 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	min-width: 1000px;
+	max-width: 1500px;
+	font-size: 0.85rem;
+	width: 100%;
+	margin: 0 auto;
+}
+@media (max-width: 1000px) {
+	header {
+		display: none;
+	}
+}
+
+#header-left,
+#header-right {
+	display: flex;
+}
+
+#header-left {
+	align-items: baseline;
+}
+
+#header-right > :first-child {
+	margin-top: 4px;
+}
+
+#header-left > a,
+#header-right > a {
+	padding: 15px;
+}
+
+#mail-root {
+	position: relative;
+	width: 180px;
+	height: 100%;
+}
+
+#mail-root-absolute {
+	position: absolute;
+	background-color: white;
+	box-shadow: 0 1px 4px 1px #dfdfdf;
+	border-radius: 4px;
+	width: 180px;
+	height: 200px;
+	top: 10px;
+	z-index: 100;
+}
+
+#mail-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+#mail-header > a {
+	padding: 0 5px;
+}
+
+#mail-login {
+	z-index: 1;
+	right: 0;
+	bottom: -182px;
+}
+
+#mail-login-form {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	margin: 10px 15px;
+	height: 95px;
+}
+
+#mail-login-form > input {
+	border-style: none none solid none;
+	border-width: 1px;
+	border-color: #ccc;
+	font-size: 0.95rem;
+	padding: 0 0 5px;
+}
+
+#mail-login-form > input:focus {
+	outline: none;
+	padding: 0 0 4px;
+	border-width: 2px;
+	border-color: #abcbff;
+}
+
+#not-own-pc-row {
+	font-size: 0.75rem;
+}
+
+#not-own-pc-row:hover {
+	cursor: pointer;
+}
+
+#login-submit-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	color: #ccc;
+	font-size: 1.2rem;
+}
+
+#login-submit-bar > a:hover {
+	color: #aaa;
+}
+
+#login-submit-bar > :first-child {
+	padding-left: 10px;
+}
+
+#login-submit-bar > button {
+	padding: 6px 12px;
+	font-size: 1.07rem;
+	border: none;
+	border-radius: 4px;
+	margin: 0 7px 5px 5px;
+	background-color: #e8e8e8;
+	transition: background-color 0.15s;
+}
+
+#login-submit-bar > button:hover {
+	cursor: pointer;
+}
+
+#login-submit-bar > button:focus {
+	outline-width: 0;
+	background-color: #d4d0c9;
+	transition: background-color 0.15s;
+}
+
+.rotated-minus-45 {
+	transform: rotate(-45deg);
+	display: inline-block;
+}

@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+footer {
+	display: flex;
+	width: 100%;
+	background-color: yellow;
+	justify-content: center;
+	color: #878787;
+	background-color: #f0f0f0;
+	font-size: 0.85rem;
+	margin: 40px auto 0;
+	padding: 30px 20px 0;
+	height: 148px;
+}
+@media (max-width: 510px) {
+	footer {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		box-sizing: border-box;
+		height: auto;
+	}
+
+	footer > #footer-about-etc {
+		justify-content: center;
+	}
+}
+
+footer > * {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	max-width: 283px;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+#footer-about-etc > *,
+#footer-dzen-tv > * {
+	margin: 8px 0;
+}
+
+#footer-logo {
+	font-family: 'Yanone Kaffeesatz';
+	font-size: 1.8rem;
+	align-self: flex-end;
+	text-align: right;
+	margin-bottom: 30px;
+}
+@media (max-width: 510px) {
+	#footer-logo {
+		align-self: center;
+    margin: 0;
+	}
+}

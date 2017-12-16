@@ -1,0 +1,232 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<title>Чпокс</title>
+	<link href='https://fonts.googleapis.com/css?family=Yanone%20Kaffeesatz&subset=latin,cyrillic' rel='stylesheet'>
+	<script async src="https://use.fontawesome.com/647003f239.js"></script>
+	<script async src="dropdown.js" onload="initDropdown()"></script>
+</head>
+<body>
+
+	<header>
+		<div id="header-left">
+			<a href="#">Сделать стартовой</a>
+			<a href="#" class="lighter-more"><div class="rotated-minus-45">➤</div> Москва</a>
+		</div>
+		<div id="header-right">
+			<a href="#">Настройка</a>
+			<div id="mail-root">
+				<div id="mail-root-absolute">
+					<div id="mail-header">
+						<a href="#">Почта</a>
+						<a href="#" class="lighter-more">Завести почту</a>
+					</div>
+					<div id="mail-login">
+						<form  action="#" method="post" id="mail-login-form">
+							<input type="text" name="login" placeholder="Логин"><br/>
+							<input type="password" name="password" placeholder="Пароль"><br/>
+							<label id="not-own-pc-row" for="not-own-pc"><input type="checkbox" name="not-own-pc" id="not-own-pc"> Чужой компьютер</label>
+						</form>
+						<div id="login-submit-bar">
+							<a href="#" title="ВКонтакте"><i class="fa fa-vk"></i></a>
+							<a href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#" title="ещё"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+							<button type="submit" form="mail-login-form" value="Submit">Войти</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div id="news">
+			<h1><a href="#">Сейчас в СМИ</a><a href="#" class="lighter"> в Москве</a> <span id="time" class="only-desktop">1 января, четверг <a href="#">00:00</a></span></h1>
+			<ul id="news-list">
+				<li><a href="#">Душа моя озарена неземной радостью</a></li>
+				<li class="lightning-bolt"><a href="#">Как эти чудесные весенние утра</a></li>
+				<li><a href="#">Которыми я наслаждаюсь от всего сердца</a></li>
+				<li><a href="#">Я совсем один и блаженствую</a></li>
+				<li><a href="#">В здешнем краю, словно созданном для таких, как я</a></li>
+			</ul>
+			<div id="currency">
+				<div><strong><a href="#">USD ЦБ</a></strong> 60,00</div>
+				<div><strong><a href="#">EUR ЦБ</a></strong> 70,00</div>
+				<div class="only-desktop"><strong><a href="#">НЕФТЬ</a></strong> 60,00 <span class="lighter-more">+0,00%</span></div>
+				<strong><a href="#" class="lighter-more">⋯</a></strong>
+			</div>
+		</div>
+
+		<div id="browser-banner" class="only-desktop">
+			<div id="browser-logo">
+				<a href="#">Ch</a>
+				<a href="#" id="age-restriction-link">0+</a>
+			</div>
+			<div>
+				<h1><a href="#">Браузер <br /> без проблем</a></h1>
+				<p>Технология Респект</p>
+			</div>
+		</div>
+		<div id="search-bar">
+			<div class="logo">Чпокс</div>
+			<div id="search-bar-no-logo">
+				<div id="services-list">
+					<a href="#">Карты</a>
+					<a href="#">Маркет</a>
+					<a href="#" class="only-desktop">Новости</a>
+					<a href="#" class="only-desktop">Переводчик</a>
+					<a href="#">Картинки</a>
+					<a href="#">Видео</a>
+					<a href="#" class="only-desktop">Музыка</a>
+					<div id="drop-down-combo" class="only-desktop">
+						<a href="#" id="more-services" class="drop-button">ещё</a>
+						<div id="more-services-dropdown" class="dropdown-panel">
+							<div id="more-services-dropdown-relative">
+								<div id="services-top-list">
+									<a href="#">Авиабилеты</a>
+									<a href="#">Автобусы</a>
+									<a href="#">Повозка.рф</a>
+									<a href="#">Афиша</a>
+									<a href="#">Блоги</a>
+									<a href="#">Деньги</a>
+									<a href="#">Диск</a>
+									<a href="#">Каталог</a>
+									<a href="#">Недвижимость</a>
+									<a href="#">Погода</a>
+									<a href="#">Поиск людей</a>
+									<a href="#">Почта</a>
+									<a href="#">Пробки</a>
+									<a href="#">Путешествия</a>
+									<a href="#">Работа</a>
+									<a href="#">Радио</a>
+									<a href="#">Расписания</a>
+									<a href="#">Такси</a>
+									<a href="#">Телепрограмма</a>
+									<a href="#">Фотки</a>
+								</div>
+								<div id="services-bottom-list">
+									<a href="#">Для мобильного</a>
+									<a href="#">Программы</a>
+									<a href="#">Все сервисы</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<form id="search-form">
+					<div>
+						<input id="search-input" type="text" autocomplete="off">
+						<div id="search-suggestions">
+							<a href="#"><strong>запрос</strong> вариант</a>
+							<a href="#"><strong>запрос</strong> вариант</a>
+							<a href="#"><strong>запрос</strong> вариант</a>
+						</div>
+						<a href="#" id="screen-keyboard-search" class="only-desktop"><i class="fa fa-keyboard-o" aria-hidden="true"></i></a>
+						<div role="button" id="search-button" onclick="document.getElementById('search-form').submit()">
+							<span id="search-button-text">Найти</span>
+							<div id="search-button-triangle"></div>
+						</div>
+					</div>
+				</form>
+				<div class="prompts-below-search-bar only-desktop">
+					<p id="usage-example">Найдём примеры. Например,
+						<a href="#" class="lighter-more">фамилия царя Гороха</a>
+					</p>
+					<p><a id="download-browser-prompt" href="#"><span id="small-browser-logo">Ch</span> Скачайте Чпокс.Браузер</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="main-banner">Реклама</div>
+
+		<div id="weather">
+			<div id="weather-header">
+				<h1><a href="#">Погода</a></h1>
+				<a href="#"><i class="fa fa-cloud" aria-hidden="true"></i></a>
+				<a href="#">+1 °С</a>
+			</div>
+			<a href="#">Ночь +2, утро +3</a>
+		</div>
+
+		<div id="traffic-jams">
+			<h1><a href="#">Пробки </a><a href="#"><div class="circle green-background"></div><span class="black-text"> 1 балл</span></a></h1>
+			<a href="#" id="traffic-status">На дорогах свободно</a>
+		</div>
+
+		<div id="map">
+			<h1><a href="#">Карта Москвы</a></h1>
+			<div id="transport-links">
+				<a href="#" class="transport-link">Метро</a>
+				<a href="#" class="transport-link">Такси</a>
+				<a href="#" class="transport-link">Расписания</a>
+				<a href="#" class="transport-link">Междугородние автобусы</a>
+			</div>
+		</div>
+
+		<div id="suggested-links">
+			<h1><a href="#">Посещяемое</a></h1>
+			<ul id="suggested-links-list">
+				<li><strong><a href="#">Ярмарка</a></strong> — <a href="#">добро из Китая</a></li>
+				<li><strong><a href="#">Повозка.рф</a></strong> — <a href="#">пробег до 100&nbsp;000</a></li>
+				<li><strong><a href="#">Недвижимость</a></strong> — <a href="#">ЖК&nbsp;Татамово</a></li>
+				<li><strong><a href="#">Работа</a></strong> — <a href="#">зарплата от 99&nbsp;999&nbsp;руб</a></li>
+				<li><strong><a href="#">Авиабилеты</a></strong> — <a href="#">из Москвы</a></li>
+				<li><strong><a href="#">Видео</a></strong> — <a href="#">свежие мемы</a></li>
+				<li><strong><a href="#">Авиабилеты</a></strong> — <a href="#">из Москвы</a></li>
+			</ul>
+		</div>
+
+		<div id="tv">
+			<h1><a href="#">Телепрограмма</a> <a href="#" id="online-tv-button">ТВ онлайн ▶&#xFE0E;</a></h1>
+			<div id="tv-program">
+				<a href="">21:10 Звезды-магнетары <span class="lighter-more">ХТВ</span></a>
+				<a href="">21:40 Футбол <span class="lighter-more">Ау!</span></a>
+				<a href="">22:00 Stand Up <span class="lighter-more">НТН</span></a>
+				<a href="">22:00 Новости <span class="lighter-more">Россия Возвращается</span></a>
+				<a href="">22:05 Предпоследний мент-14 <span class="lighter-more">Суэцкий канал</span></a>
+				<a href="">22:09 По чесноку... <span class="lighter-more">ТСТ</span></a>
+			</div>
+		</div>
+
+		<div id="new-movies">
+			<h1><a href="#">Афиша</a></h1>
+			<div id="new-movies-list">
+				<a href="">Комната <span class="lighter-more">премьера в чт</span></a>
+				<a href="">Коммандо <span class="lighter-more">боевик</span></a>
+				<a href="">Тролль 2 <span class="lighter-more">драма</span></a>
+				<a href="">Металлопокалипсис <span class="lighter-more">мультфильм</span></a>
+				<a href="">Кунг По <span class="lighter-more">боевик</span></a>
+				<strong><a href="#">Концерты - Shmorpions</a></strong>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div id="footer-dzen-tv" class="only-desktop">
+			<a href="#"><strong>Йога</strong> - личная полоса статей</a>
+			<a href="#"><strong>ТВ онлайн</strong> - эфир любимых каналов</a>
+			<a href="#"><strong>Телепередачи</strong> - архив всех выпусков</a>
+		</div>
+		<div id="footer-about-etc">
+			<a href="#">Коннект</a>
+			<a href="#" class="only-desktop">Метрика</a>
+			<a href="#" class="only-desktop">Реклама</a>
+			<a href="#" class="only-desktop">Касса</a>
+			<a href="#" class="only-desktop">Вакансии</a>
+			<a href="#" class="only-desktop">Блог</a>
+			<a href="#">Компания</a>
+			<a href="#" class="only-desktop">About</a>
+			<a href="#" class="only-desktop">Помощь</a>
+			<a href="#">Обратная связь</a>
+		</div>
+		<div id="footer-logo">Чпокс</div>
+	</footer>
+</body>
+</html>
